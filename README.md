@@ -28,7 +28,7 @@ This project implements the core components of transformer architectures to gain
 ## Implementation Status
 
 - [x] Tokenization
-- [ ] Embedding Layer
+- [x] Embedding Layer
 - [ ] Positional Encoding
 - [ ] Scaled Dot-Product Attention
 - [ ] Multi-Head Attention
