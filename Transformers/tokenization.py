@@ -37,7 +37,8 @@ class SimpleTokenizer:
 
         all_words = []
         for text in texts:
-            all_words.extend(text.split())
+            words = text.lower().split()
+            all_words.extend(words)
 
         for word in sorted(set(all_words)):
             self.word_to_id[word] = self.vocab_size
@@ -49,18 +50,18 @@ class SimpleTokenizer:
         Convert text to list of token IDs.
         Use UNK for unknown words.
         """
+        
+        # Handles empty string
+        if not text or not text.strip():
+            return []
 
         ids = []
 
-        ids.append(self.word_to_id[self.bos_token])
-
-        words = text.split()
+        words = text.lower().split()
 
         for word in words:
             token_id = self.word_to_id.get(word, self.word_to_id[self.unk_token])
             ids.append(token_id)
-
-        ids.append(self.word_to_id[self.eos_token])
 
         return ids
 
@@ -68,6 +69,10 @@ class SimpleTokenizer:
         """
         Convert list of token IDs back to text.
         """
+        
+        # Hnadles empty list
+        if not ids:
+            return ""
         
         words = []
 
