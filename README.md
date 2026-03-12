@@ -31,7 +31,7 @@ This project implements the core components of transformer architectures to gain
 - [x] Embedding Layer
 - [x] Positional Encoding
 - [x] Scaled Dot-Product Attention
-- [ ] Multi-Head Attention
+- [x] Multi-Head Attention
 - [ ] Feed-Forward Network
 - [ ] Layer Normalization
 - [ ] Encoder Block
