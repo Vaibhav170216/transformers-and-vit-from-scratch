@@ -1,5 +1,5 @@
 # transformers-and-vit-from-scratch
-Implementation of Transformer and Vision Transformer architectures from scratch using PyTorch.
+Implementation of Transformer and Vision Transformer architectures from scratch using Numpy and PyTorch.
 
 ## About
 
@@ -8,6 +8,9 @@ This project implements the core components of transformer architectures to gain
 ## Architecture Components
 
 **Transformer:**
+
+![Transformer Encoder](images/encoder.png)
+
 1. Tokenization
 2. Embedding Layer
 3. Positional Encoding
