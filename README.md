@@ -22,8 +22,8 @@ This project implements the core components of transformer architectures to gain
 
 **Vision Transformer (ViT):**
 1. Patch Embedding
-2. Position Embeddings
-3. Class Token
+2. Class Token
+3. Position Embeddings
 4. ViT Encoder Block
 5. Classification Head
 6. Complete ViT
