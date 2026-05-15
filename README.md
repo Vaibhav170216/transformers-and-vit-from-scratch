@@ -38,7 +38,7 @@ This project implements the core components of transformer architectures to gain
 - [x] Feed-Forward Network
 - [x] Layer Normalization
 - [x] Encoder Block
-- [ ] Vision Transformer (ViT)
+- [x] Vision Transformer (ViT)
 
 ## References
 
